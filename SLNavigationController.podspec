@@ -19,10 +19,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/supreme0530/SLNavigationController.git", :tag => "#{s.version}" }
 
-  s.platform     = :ios, '8.0'  
 
 
-  s.source_files  = "SLNavigationController", "Classes/**/*/*.{h,m}"
+  s.source_files  = "SLNavigationController", "Classes/*/**/*.{h,m}"
 
 
 
@@ -60,6 +59,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    s.dependency 'Masonry','~> 1.0.1'
    s.dependency 'SDWebImage','~> 3.8.1'
-
+   s.ios.deployment_target = "7.1"
 
 end
